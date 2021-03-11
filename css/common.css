@@ -1,4 +1,46 @@
+/* 字体声明 */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+/* 版心 */
 .w {
     width: 1200px;
     margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.rl {
+    float: right;
+}
+.style_red {
+    color: red;
+}
+/* 快捷导航模块 */
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #f1f1f1;
+}
+.shortcut ul li {
+    float: left;
+}
+.shortcut .rl ul li:nth-child(2n) {
+    width: .5px;
+    height: 12px;
+    background-color: #666666;
+    margin: 9px 15px 0 15px;
+}
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
 }
