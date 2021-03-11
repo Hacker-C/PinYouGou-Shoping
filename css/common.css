@@ -1,46 +1,128 @@
 /* 字体声明 */
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?tomleg');
-    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
-      url('../fonts/icomoon.woff?tomleg') format('woff'),
-      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tomleg");
+  src: url("../fonts/icomoon.eot?tomleg#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tomleg") format("truetype"),
+    url("../fonts/icomoon.woff?tomleg") format("woff"),
+    url("../fonts/icomoon.svg?tomleg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 /* 版心 */
 .w {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 .fl {
-    float: left;
+  float: left;
 }
 .rl {
-    float: right;
+  float: right;
 }
 .style_red {
-    color: red;
+  color: red;
 }
 /* 快捷导航模块 */
 .shortcut {
-    height: 30px;
-    line-height: 30px;
-    background-color: #f1f1f1;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
 }
 .shortcut ul li {
-    float: left;
+  float: left;
 }
 .shortcut .rl ul li:nth-child(2n) {
-    width: .5px;
-    height: 12px;
-    background-color: #666666;
-    margin: 9px 15px 0 15px;
+  width: 0.5px;
+  height: 12px;
+  background-color: #666666;
+  margin: 9px 15px 0 15px;
 }
 .arrow-icon::after {
-    content: '\e91e';
-    font-family: 'icomoon';
-    margin-left: 6px;
+  content: "\e91e";
+  font-family: "icomoon";
+  margin-left: 6px;
+}
+/* header 头部制作 */
+.header {
+  position: relative;
+  height: 105px;
+}
+.logo {
+  position: absolute;
+  top: 25px;
+  width: 175px;
+  height: 56px;
+  /* background-color: skyblue; */
+}
+.logo a {
+  display: block;
+  width: 175px;
+  height: 56px;
+  background: url(../images/logo.png);
+  /* 隐藏文字 */
+  font-size: 0;
+}
+.search {
+  position: absolute;
+  left: 346px;
+  top: 25px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #b1191a;
+}
+.search input {
+  float: left;
+  width: 454px;
+  height: 32px;
+  padding-left: 10px;
+}
+.search button {
+  float: left;
+  width: 80px;
+  height: 32px;
+  background-color: #b1191a;
+  font-size: 16px;
+  color: #fff;
+}
+.hotwords {
+  position: absolute;
+  top: 66px;
+  left: 346px;
+}
+.hotwords a {
+  margin: 0 10px;
+}
+.shopcar {
+  position: absolute;
+  right: 60px;
+  top: 25px;
+  width: 140px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
+}
+.shopcar::before {
+  content: "\e93a";
+  font-family: "icomoon";
+  margin-right: 5px;
+  color: #db5e5e;
+}
+.shopcar::after {
+  content: "\e920";
+  font-family: "icomoon";
+  margin-left: 10px;
+}
+.count {
+  position: absolute;
+  top: -5px;
+  left: 95px;
+  height: 14px;
+  line-height: 14px;
+  border-radius: 7px 7px 7px 0;
+  background-color: #e60012;
+  padding: 0 5px;
 }
