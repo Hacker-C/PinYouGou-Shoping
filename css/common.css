@@ -173,7 +173,6 @@
 }
 
 .dropdown .dd {
-    display: none;
     width: 210px;
     height: 465px;
     background-color: #c81623;
@@ -234,6 +233,7 @@
 }
 
 .mod_service {
+    margin-top: 20px;
     height: 80px;
     border-bottom: 1px solid #ccc;
 }
