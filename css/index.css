@@ -15,8 +15,9 @@
 .news {
     float: right;
     width: 250px;
-    height: 376px;
     border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-bottom: 0;
 }
 
 .news_header {
@@ -47,7 +48,7 @@
 
 .news_bd {
     height: 133px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0;
     padding-left: 15px;
 }
 
@@ -57,30 +58,138 @@
 }
 
 .news_bd ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 14px;
     margin-top: 6px;
 }
 
 .news_bottom {
-    height: 210px;
+    position: relative;
+    width: 250px;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 5px;
 }
 
 .news_bottom ul li {
+    position: relative;
     float: left;
-    height: 70px;
-    width: calc(248px/4);
+    height: 66px;
+    width: calc(250px/4);
     border-left: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    background-color: skyblue;
+    text-align: center;
 }
 
 .news_bottom ul li:nth-child(4n+1) {
     border-left: 0;
 }
 
+.news_bottom ul li i {
+    position: absolute;
+    display: block;
+    height: 28px;
+    width: 28px;
+    margin-top: 12px;
+    left: 50%;
+    margin-left: -14px;
+}
+
+.news_bottom ul li:nth-child(1) i {
+    background: url(../images/icons.png) no-repeat -15px -15px;
+
+}
+
+.news_bottom ul li:nth-child(2) i {
+    background: url(../images/icons.png) no-repeat -76px -15px;
+}
+
+.news_bottom ul li:nth-child(3) i {
+    background: url(../images/icons.png) no-repeat -139px -15px;
+}
+
+.news_bottom ul li:nth-child(4) i {
+    background: url(../images/icons.png) no-repeat -202px -15px;
+}
+
+.news_bottom ul li:nth-child(5) i {
+    background: url(../images/icons.png) no-repeat -16px -87px;
+}
+
+.news_bottom ul li:nth-child(6) i {
+    background: url(../images/icons.png) no-repeat -76px -87px;
+}
+
+.news_bottom ul li:nth-child(7) i {
+    background: url(../images/icons.png) no-repeat -139px -87px;
+}
+
+.news_bottom ul li:nth-child(8) i {
+    background: url(../images/icons.png) no-repeat -204px -87px;
+}
+
+.news_bottom ul li:nth-child(9) i {
+    background: url(../images/icons.png) no-repeat -15px -158px;
+}
+
+.news_bottom ul li:nth-child(10) i {
+    background: url(../images/icons.png) no-repeat -76px -158px;
+}
+
+.news_bottom ul li:nth-child(11) i {
+    background: url(../images/icons.png) no-repeat -139px -156px;
+}
+
+.news_bottom ul li:nth-child(12) i {
+    background: url(../images/icons.png) no-repeat -204px -158px;
+}
+
+.news_bottom ul li p {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -14px;
+}
+
 .main img {
     display: block;
     float: right;
+}
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 1px;
+    height: 145px;
+    background-color: #dddddd;
 }
