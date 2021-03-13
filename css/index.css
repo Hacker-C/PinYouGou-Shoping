@@ -365,6 +365,7 @@
 .fun_bd .good .recom p span:nth-of-type(3) {
     font-size: 12px;
 }
+
 .fun_bd .good .find {
     position: absolute;
     top: 245px;
@@ -374,22 +375,27 @@
     /* background-color: pink; */
     background: url(../upload/good2.png) no-repeat 102px 11px;
 }
+
 .fun_bd .good .find p {
     margin-top: 55px;
     margin-left: 10px;
 }
+
 .fun_bd .good .find p span {
     display: block;
 }
+
 .fun_bd .good .find p span:first-child {
     font-size: 16px;
     font-weight: 700;
 }
+
 .fun_bd .good .find p span:nth-child(2),
 .fun_bd .good .find p span:nth-child(2) {
     font-size: 12px;
 
 }
+
 /* w405 */
 .fun_bd .brand {
     float: left;
@@ -399,6 +405,7 @@
     background-color: #f7f7f7;
 
 }
+
 .fun_bd .brand h4 {
     height: 40px;
     line-height: 40px;
@@ -407,6 +414,7 @@
     text-align: center;
     border-bottom: 1.5px dotted #ededed;
 }
+
 .fun_bd .brand .su {
     height: 206px;
     width: 100%;
@@ -418,6 +426,7 @@
     position: relative;
     width: 100%;
 }
+
 .fun_bd .brand .clothes div:first-child {
     float: left;
     width: 50%;
@@ -425,18 +434,22 @@
     border-right: 1px solid #ededed;
     background: url(../upload/clothes.png) no-repeat 85px 25px;
 }
+
 .fun_bd .brand .clothes div p {
     margin-top: 50px;
     margin-left: 10px;
 }
-.fun_bd .brand .clothes div p span{
+
+.fun_bd .brand .clothes div p span {
     display: block;
 }
+
 .fun_bd .brand .clothes div:first-child p span:first-child,
 .fun_bd .brand .clothes div:last-child p span:first-child {
     font-weight: 700;
     font-size: 16px;
 }
+
 .fun_bd .brand .clothes div:last-child {
     float: right;
     width: 50%;
@@ -444,6 +457,7 @@
     background: url(../upload/clothes2.png) no-repeat 85px 25px;
 
 }
+
 /* 商标 */
 .fun_bd .pic {
     float: left;
@@ -452,4 +466,96 @@
     background: url(../upload/pic.png) no-repeat 2px;
     border-bottom: 1px solid #ededed;
     padding: none;
+}
+
+/* 家用电器 */
+.jiadian_hd {
+    height: 35px;
+    border-bottom: 2px solid #c81623;
+    margin-top: 20px;
+}
+
+.jiadian_hd h4 {
+    float: left;
+    font-size: 18px;
+    color: #cc353e;
+}
+
+.jiadian_hd .table_list {
+    float: right;
+    width: 665px;
+    height: 20px;
+    margin-top: 10px;
+    padding-right: 1px;
+}
+
+.jiadian_hd .table_list ul li {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+.jiadian_hd .table_list ul li:last-child {
+    margin-right: 5px;
+}
+
+.jiadian_hd .table_list ul li:nth-child(-n+8) {
+    border-right: 1px solid #ccc;
+}
+
+.jiadian_bd {
+    height: 360px;
+    width: 100%;
+}
+
+.jd_list_item>div {
+    float: left;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    height: 361px;
+    text-align: center;
+}
+
+.col_210 ul {
+    padding-left: 12px;
+}
+
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    line-height: 33px;
+    margin-right: 10px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    text-align: center;
+    border: 1px solid #ededed;
+}
+
+.col_221 img {
+    margin-top: 23px;
+}
+
+.col_221 hr {
+    border: .5px solid #ededed;
+}
+
+.col_221_2 {
+    margin-top: 7px;
+    border-bottom: 1px solid #ededed;
+}
+
+.col_219 {
+    width: 219px;
 }
