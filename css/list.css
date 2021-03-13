@@ -1,0 +1,154 @@
+.header .sk {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    height: 35px;
+    line-height: 35px;
+    border-left: 2px solid #b1191a;
+    padding-left: 20px;
+}
+
+.nav {
+    line-height: 47px;
+}
+
+.nav .sk_list {
+    float: left;
+    width: 350px;
+}
+
+.nav .sk_list ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 25px;
+}
+
+.nav .sk_items {
+    float: right;
+    width: 800px;
+}
+
+.nav .sk_items ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.nav .sk_items ul li:last-child::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+/* 手机展示模块 */
+
+.sk_container .sk_bd {
+    width: 1200px;
+}
+
+.sk_container .sk_bd ul li {
+    float: left;
+    width: 290px;
+    height: 491.5px;
+    margin-bottom: 35px;
+    margin-right: 13px;
+    border: 1.5px solid transparent;
+}
+
+.sk_container .sk_bd ul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.sk_container .sk_bd ul li:hover {
+    border: 1.5px solid #b1191a;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+.bd {
+    width: 300px;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+.decration {
+    width: 100%;
+    height: 50px;
+    color: #a3a3a3;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+.price .now {
+    color: #ed282e;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.price .old {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.sold {
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 15px 0 0 10px;
+}
+
+.bar {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 150px;
+    height: 13px;
+    border: 2px solid #ed282e;
+    border-radius: 8px;
+    vertical-align: center;
+}
+
+.bar_in {
+    height: 100%;
+    width: 87%;
+    background-color: #ed282e;
+    border-radius: 8px 0 0 8px;
+    transition: width .5s;
+}
+
+.bar:hover .bar_in {
+    width: 100%;
+}
+
+.sold span {
+    color: #ed282e;
+}
+
+.buy {
+    display: block;
+    width: 288px;
+    height: 67px;
+    background-color: #b1191a;
+    color: #fff;
+    text-align: center;
+    line-height: 67px;
+    font-size: 20px;
+    border: 1px solid transparent;
+}
+
+.sk_container .sk_bd ul li a:hover {
+    color: #fff;
+}
