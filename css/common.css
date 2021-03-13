@@ -228,13 +228,13 @@
 
 /* 底部模块制作 */
 .footer {
+    margin-top: 20px;
     height: 415px;
     background-color: #f5f5f5;
     padding-top: 10px;
 }
 
 .mod_service {
-    margin-top: 20px;
     height: 80px;
     border-bottom: 1px solid #ccc;
 }

@@ -179,6 +179,7 @@
     position: relative;
     float: left;
 }
+
 .recom_bd ul li img {
     width: 248px;
     height: 163px;
@@ -192,4 +193,82 @@
     width: 1px;
     height: 145px;
     background-color: #dddddd;
+}
+
+/* 猜你喜欢 *236+26*/
+.like {
+    margin-top: 15px;
+}
+
+.like_hd {
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+}
+
+.like_hd span:first-child {
+    float: left;
+    font-size: 18px;
+}
+
+.like_hd span:last-child {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666;
+
+}
+
+.like_hd span:last-child::after {
+    display: block;
+    float: right;
+    content: '';
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    margin-right: 15px;
+    background: url(../images/icons.png) no-repeat -418px -109px;
+}
+
+.like_bd {
+    position: relative;
+    border: 1px solid #ededed;
+    border-top: none;
+    height: 236px;
+}
+
+.like_bd ul li {
+    border: none;
+    float: left;
+    height: 236px;
+    width: 199px;
+}
+
+.like_bd ul li .img {
+    width: 202px;
+    height: 155px;
+    border: none;
+}
+
+.like_bd ul li .description {
+    height: 45px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.like_bd ul li .price {
+    padding-left: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #df3033;
 }
