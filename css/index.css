@@ -6,10 +6,72 @@
 }
 
 .focus {
+    position: relative;
     float: left;
     width: 721px;
     height: 455px;
     background-color: skyblue;
+    overflow: hidden;
+}
+
+.focus ul {
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus .arrow-l,
+.focus .arrow-r {
+    display: none;
+    height: 30px;
+    width: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+.focus .arrow-l {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.focus .arrow-r {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+.circle li {
+    float: left;
+    margin-left: 10px;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.current {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
 }
 
 .news {
