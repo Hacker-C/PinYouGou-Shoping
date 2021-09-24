@@ -16,7 +16,7 @@ window.addEventListener('load', function () {
         arrowR.style.display = 'none';
         timer = window.setInterval(function () {
             arrowR.click();
-        }, 2000);
+        }, 2500);
     })
 
     // 获取图片ul
@@ -52,44 +52,57 @@ window.addEventListener('load', function () {
     }
     circle.children[0].className = 'current';
     // 点击右方向键切换图片
+    // 设置节流阀
+    let flag = true;
     arrowR.addEventListener('click', function () {
-        if (num === ul.children.length - 1) {
-            ul.style.left = 0;
-            num = 0;
+        if (flag) {
+            flag = false;
+            if (num === ul.children.length - 1) {
+                ul.style.left = 0;
+                num = 0;
+            }
+            num++;
+            animate(ul, - num * focus.offsetWidth, function () {
+                flag = true;
+            });
+            circleNum++;
+            if (circleNum === 4) {
+                circleNum = 0;
+            }
+            for (let i = 0; i < circle.children.length; i++) {
+                circle.children[i].className = '';
+            }
+            circle.children[circleNum].className = 'current';
         }
-        num++;
-        animate(ul, - num * focus.offsetWidth);
-        circleNum++;
-        if (circleNum === 4) {
-            circleNum = 0;
-        }
-        for (let i = 0; i < circle.children.length; i++) {
-            circle.children[i].className = '';
-        }
-        circle.children[circleNum].className = 'current';
+
     })
 
     // 左边
     arrowL.addEventListener('click', function () {
-        if (num == 0) {
-            num = ul.children.length - 1;
-            ul.style.left = - num * focus.offsetWidth + 'px';
+        if (flag) {
+            flag = false;
+            if (num == 0) {
+                num = ul.children.length - 1;
+                ul.style.left = - num * focus.offsetWidth + 'px';
+            }
+            num--;
+            animate(ul, - num * focus.offsetWidth, function () {
+                flag = true;
+            });
+            circleNum--;
+            if (circleNum < 0) {
+                circleNum = circle.children.length - 1;
+            }
+            for (let i = 0; i < circle.children.length; i++) {
+                circle.children[i].className = '';
+            }
+            circle.children[circleNum].className = 'current';
         }
-        num--;
-        animate(ul, - num * focus.offsetWidth);
-        circleNum--;
-        if (circleNum < 0) {
-            circleNum = circle.children.length - 1;
-        }
-        for (let i = 0; i < circle.children.length; i++) {
-            circle.children[i].className = '';
-        }
-        circle.children[circleNum].className = 'current';
     })
 
     // 自动切换
     let timer = this.window.setInterval(function () {
         arrowR.click();
-    }, 2000);
+    }, 2500);
 
 })

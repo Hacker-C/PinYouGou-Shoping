@@ -7,9 +7,7 @@ function animate(obj, target, callback) {
         // console.log(step);
         if (obj.offsetLeft === target) {
             clearInterval(obj.timer);
-            if (callback) {
-                callback();
-            }
+            callback&&callback();
         }
         obj.style.left = obj.offsetLeft + step + 'px';
     }, 30);
